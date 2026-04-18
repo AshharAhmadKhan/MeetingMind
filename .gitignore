@@ -60,6 +60,33 @@ lerna-debug.log*
 response.json
 .cache/
 
+# Test reports and demo backups
+test_report_*.json
+demo_backup_*.json
+demo_complete_backup_*.json
+test-meeting-script.md
+
+# Vendored Lambda dependencies (installed by SAM during build)
+backend/functions/*/boto3/
+backend/functions/*/boto3-*.dist-info/
+backend/functions/*/botocore/
+backend/functions/*/botocore-*.dist-info/
+backend/functions/*/dateutil/
+backend/functions/*/python_dateutil-*.dist-info/
+backend/functions/*/jmespath/
+backend/functions/*/jmespath-*.dist-info/
+backend/functions/*/s3transfer/
+backend/functions/*/s3transfer-*.dist-info/
+backend/functions/*/urllib3/
+backend/functions/*/urllib3-*.dist-info/
+backend/functions/*/six.py
+backend/functions/*/six-*.dist-info/
+backend/functions/*/aws_xray_sdk/
+backend/functions/*/aws_xray_sdk-*.dist-info/
+backend/functions/*/wrapt/
+backend/functions/*/wrapt-*.dist-info/
+backend/functions/*/bin/
+
 # Testing
 coverage/
 .nyc_output/
